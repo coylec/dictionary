@@ -20,4 +20,10 @@ def describe(word):
 
 word = input("Enter word: ")
 
-print(describe(word))
+output = describe(word)
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
